@@ -39,7 +39,6 @@ def signin():
 def calculate():
     number=request.args.get("number")
     number=int(number)
-    #result=square*square
     return redirect(url_for('square',num=number))
 @app.route("/square/<num>")
 def square(num):
